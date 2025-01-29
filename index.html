@@ -1,0 +1,45 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Tiempo de Usuarios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de Tiempo de Usuarios</h1>
+        
+        <div class="input-section">
+            <input type="text" id="username" placeholder="Nombre de Usuario">
+            <input type="number" id="hours" placeholder="Horas" min="0">
+            <input type="number" id="minutes" placeholder="Minutos" min="0" max="59">
+            <input type="number" id="seconds" placeholder="Segundos" min="0" max="59">
+            <button id="addUser">Agregar Usuario</button>
+        </div>
+
+        <div class="search-section">
+            <input type="text" id="searchInput" placeholder="Buscar usuario...">
+        </div>
+
+        <div class="discord-section">
+            <button id="discordLink">Vincular con Discord</button>
+        </div>
+
+        <table id="userTable">
+            <thead>
+                <tr>
+                    <th>Nombre de Usuario</th>
+                    <th>Tiempo Total</th>
+                    <th>Cumplimiento</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="userTableBody">
+                <!-- Los usuarios se agregarán dinámicamente aquí -->
+            </tbody>
+        </table>
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
